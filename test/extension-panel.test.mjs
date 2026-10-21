@@ -119,7 +119,7 @@ test('failed writes appear in MCP settings and disabling MCP removes the missing
   find(page.tree, node => node.type === 'button' && text(node) === 'MCP 设置').props.onClick(); page.render();
   assert.match(text(page.tree), /目录不可写/);
   const help = find(page.tree, node => node.type === 'a');
-  assert.match(help.props.href, /#comfyui-extension-install$/);
+  assert.equal(help.props.href, 'https://github.com/fengye102/dsh-comfyui-web#comfyui-extension-install');
   page.expire();
   await find(page.tree, node => node.type === 'input' && node.props?.role === 'switch').props.onChange({ target: { checked: false } });
   page.render();
@@ -156,7 +156,7 @@ test('English setup diagnostics, result cards and accessibility labels use the s
   t.after(() => page.close()); page.expire();
   assert.match(text(page.tree), /The directory is not writable/);
   const guide = find(page.tree, node => node.type === 'a');
-  assert.match(guide.props.href, /README\.en\.md#comfyui-extension-install$/);
+  assert.equal(guide.props.href, 'https://github.com/fengye102/dsh-comfyui-web/blob/main/README.en.md#comfyui-extension-install');
   assert.deepEqual(Object.keys(page.dictionaries.zh).sort(), Object.keys(page.dictionaries.en).sort());
   assert.equal(Object.values(page.dictionaries.en).some(value => /\p{Script=Han}/u.test(value)), false);
   const Result = page.component('mcp__comfyui__get_image');

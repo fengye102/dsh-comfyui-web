@@ -500,7 +500,7 @@ window.__ModuleLoader__.load({ id: 'dsh-comfyui-web', factory: require => {
     const installation = connection?.extensionInstallation;
     const installationHelp = installation?.status === 'failed' || installation?.status === 'unconfigured'
       ? (readLocale().active.startsWith('zh') ? installation.message : installation.messageEn || installation.message) : t('尚未收到 AI 桥接扩展连接。请确认 ComfyUI 可访问、已安装扩展；首次安装后重启 ComfyUI 并刷新面板。Docker 用户需确认扩展所在目录已持久化挂载。');
-    const setupLink = () => h('a', { href: readLocale().active.startsWith('zh') ? 'https://github.com/mangfufu/dsh-comfyui-web#comfyui-extension-install' : 'https://github.com/mangfufu/dsh-comfyui-web/blob/main/README.en.md#comfyui-extension-install', target: '_blank', rel: 'noopener noreferrer' }, t('扩展安装说明'));
+    const setupLink = () => h('a', { href: readLocale().active.startsWith('zh') ? 'https://github.com/fengye102/dsh-comfyui-web#comfyui-extension-install' : 'https://github.com/fengye102/dsh-comfyui-web/blob/main/README.en.md#comfyui-extension-install', target: '_blank', rel: 'noopener noreferrer' }, t('扩展安装说明'));
     return h('section', { className: 'dsh-comfy', 'aria-label': t('ComfyUI 工作台') },
       h('style', null, CSS),
       h('div', { className: 'dsh-comfy-bar' },

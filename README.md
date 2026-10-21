@@ -9,7 +9,7 @@
 需要已安装的 [dsh](https://github.com/deepseek-ai/deepseek-harness)、pnpm 和本机 ComfyUI。当前适配 dsh `0.2.0-rc.2` 与 `0.2.1-rc.2`，Node.js 22 及以上。
 
 ```sh
-dsh plugin --profile web add github:mangfufu/dsh-comfyui-web
+dsh plugin --profile web add github:fengye102/dsh-comfyui-web
 ```
 
 <a id="comfyui-extension-install"></a>
@@ -130,4 +130,4 @@ MCP 默认开启，dsh 已自动接入。这里也能关闭 MCP，或复制配�
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=mangfufu/dsh-comfyui-web&type=Date)](https://www.star-history.com/?repos=mangfufu%2Fdsh-comfyui-web&type=date)
+[![Star History Chart](https://api.star-history.com/svg?repos=fengye102/dsh-comfyui-web&type=Date)](https://www.star-history.com/?repos=fengye102%2Fdsh-comfyui-web&type=date)

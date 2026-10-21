@@ -9,7 +9,7 @@ Use ComfyUI inside dsh and let AI operate your current workflow through MCP. Edi
 Requires [dsh](https://github.com/deepseek-ai/deepseek-harness), pnpm, and a local ComfyUI installation. Currently supports dsh `0.2.0-rc.2` and `0.2.1-rc.2`, and Node.js 22 or later.
 
 ```sh
-dsh plugin --profile web add github:mangfufu/dsh-comfyui-web
+dsh plugin --profile web add github:fengye102/dsh-comfyui-web
 ```
 
 <a id="comfyui-extension-install"></a>
@@ -130,4 +130,4 @@ Ask “undo the last change” to undo an AI edit. Use the top **− / +** butto
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=mangfufu/dsh-comfyui-web&type=Date)](https://www.star-history.com/?repos=mangfufu%2Fdsh-comfyui-web&type=date)
+[![Star History Chart](https://api.star-history.com/svg?repos=fengye102/dsh-comfyui-web&type=Date)](https://www.star-history.com/?repos=fengye102%2Fdsh-comfyui-web&type=date)

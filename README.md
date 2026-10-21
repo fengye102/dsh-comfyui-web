@@ -6,7 +6,7 @@
 
 ## 安装
 
-需要已安装的 [dsh](https://github.com/deepseek-ai/deepseek-harness)、pnpm 和本机 ComfyUI。当前适配 dsh `0.2.0-rc.2`，Node.js 22 及以上。
+需要已安装的 [dsh](https://github.com/deepseek-ai/deepseek-harness)、pnpm 和本机 ComfyUI。当前适配 dsh `0.2.0-rc.2` 与 `0.2.1-rc.2`，Node.js 22 及以上。
 
 ```sh
 dsh plugin --profile web add github:mangfufu/dsh-comfyui-web

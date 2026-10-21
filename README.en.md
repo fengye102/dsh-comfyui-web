@@ -6,7 +6,7 @@ Use ComfyUI inside dsh and let AI operate your current workflow through MCP. Edi
 
 ## Installation
 
-Requires [dsh](https://github.com/deepseek-ai/deepseek-harness), pnpm, and a local ComfyUI installation. Currently targets dsh `0.2.0-rc.2` and Node.js 22 or later.
+Requires [dsh](https://github.com/deepseek-ai/deepseek-harness), pnpm, and a local ComfyUI installation. Currently supports dsh `0.2.0-rc.2` and `0.2.1-rc.2`, and Node.js 22 or later.
 
 ```sh
 dsh plugin --profile web add github:mangfufu/dsh-comfyui-web
